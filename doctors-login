@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login - MediCare Clinic</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">MediCare Clinic</a></h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="login-btn">Patient Login</a></li>
+                    <li><a href="doctors-login.html" class="login-btn">Doctor Login</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 70px; background: #f8f9fa; min-height: calc(100vh - 70px); display: flex; align-items: center;">
+        <div class="form-container">
+            <h2>Doctor Portal Login</h2>
+            <div id="doctorLoginAlert" class="alert hidden"></div>
+            <form id="doctorLoginForm">
+                <div class="form-group">
+                    <label for="doctorId">Doctor ID</label>
+                    <input type="text" id="doctorId" name="doctorId" required placeholder="DR12345">
+                </div>
+                <div class="form-group">
+                    <label for="doctorPassword">Password</label>
+                    <input type="password" id="doctorPassword" name="doctorPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="general">General Medicine</option>
+                        <option value="gynecology">Women's Health</option>
+                        <option value="emergency">Emergency Medicine</option>
+                    </select>
+                </div>
+                <button type="submit" class="form-btn">Login to Portal</button>
+            </form>
+            <div class="form-link">
+                <p><a href="login.html">Patient Login</a> | <a href="#">Forgot Password?</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
